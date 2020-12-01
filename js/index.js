@@ -46,11 +46,19 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 const navBar = document.querySelectorAll('a');
 const navBarArray = Array.from(navBar);
 navBarArray[0].textContent = 'Services';
+navBarArray[0].style.color = 'green';
 navBarArray[1].textContent = 'Product';
+navBarArray[1].style.color = 'green';
 navBarArray[2].textContent = 'Vision';
+navBarArray[2].style.color = 'green';
 navBarArray[3].textContent = 'Features';
+navBarArray[3].style.color = 'green';
 navBarArray[4].textContent = 'About';
+navBarArray[4].style.color = 'green';
 navBarArray[5].textContent = 'Contact';
+navBarArray[5].style.color = 'green';
+
+
 
 /* Section Class cta */
 
@@ -94,3 +102,16 @@ contactP[2].textContent = 'sales@greatidea.io';
 
 const footer = document.querySelector('footer p');
 footer.textContent = 'Copyright Great Idea! 2018';
+
+/*Nav Bar Additions*/
+
+const prices = document.createElement('a');
+prices.textContent = 'Prices';
+prices.href = '#';
+prices.style.color = 'green';
+document.querySelector('nav').prepend(prices);
+const deals = document.createElement('a');
+deals.textContent = 'Deals';
+deals.href = '#';
+deals.style.color = 'green';
+document.querySelector('nav').appendChild(deals);
